@@ -26,7 +26,7 @@ Vacation Integration Sample as an OSGi Bundle
 7. unter ```list``` sollte nun Vaction-osgi erscheinen.
 
 9. Bei erfolgreichem Start erscheint der Context nun in der Liste
-  ```camel:context-list```
+  ``` camel:context-list ```
 
 
 camel:context-info vacation 
