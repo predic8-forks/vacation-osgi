@@ -28,7 +28,7 @@ camel:context-info vacation
 camel:route-list 
 
 ## Testen des Deployments
-Wenn Curl installiert ist, dann kann das beiliegende Sample-File welches sich im Root-Verzeichnis dieses Projektes befindet mit dem folgenden Befehl an die Camel-Route geschickt werden.
+Wenn Curl installiert ist, dann kann das beiliegende Sample-File welches sich im Root-Verzeichnis dieses Projektes befindet mit dem folgenden Befehl an die Camel-Route geschickt werden.\n
 curl -X POST -d @data.json http://localhost:8080/vacation
 
 camel:route-info  route4 
