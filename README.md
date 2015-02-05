@@ -28,20 +28,21 @@ Vacation Integration Sample as an OSGi Bundle
 9. Bei erfolgreichem Start erscheint der Context nun in der Liste
   ``` camel:context-list ```
 
-
-camel:context-info vacation 
-
-camel:route-list 
-
 ## Testen des Deployments
 Wenn Curl installiert ist, dann kann das beiliegende Sample-File welches sich im Root-Verzeichnis dieses Projektes befindet mit dem folgenden Befehl an die Camel-Route geschickt werden.
 
 curl -X POST -d @data.json http://localhost:8080/vacation
 
-camel:route-info  route4 
 
-Statistiken anschaun
+Weitere Informationen können mittels der folgenden Befehle eingesehen werden: 
+
+```
+camel:context-info vacation 
+
+camel:route-list 
+
+camel:route-info  route4 
 
 activemq:bstat 
 activemq:dstat 
-
+```
