@@ -20,14 +20,21 @@ Vacation Integration Sample as an OSGi Bundle
   ```install mvn:de.predic8/vacation-osgi```
 
 7. ``` list ```
-  es sollte nun ``` [ 151] [Installed  ] [            ] [       ] [   80] Vacation ESB Sample OSGi (1.0.0.SNAPSHOT) ```erscheinen
+  es sollte nun 
+  ``` [ 151] [Installed  ] [            ] [       ] [   80] Vacation ESB Sample OSGi (1.0.0.SNAPSHOT) ```
+  erscheinen
   
-8. ``` camel:context-list ```
+8. ``` camel:context-list ``` zeigt nun
+  ``` 
+   Context        Status         Uptime              
+ -------        ------         ------              
+ weathermap     Started        2 hours 26 minutes  
+  ```
 
 ## Testen des Deployments
 Wenn Curl installiert ist, dann kann das beiliegende Sample-File welches sich im Root-Verzeichnis dieses Projektes befindet mit dem folgenden Befehl an die Camel-Route geschickt werden.
 
-curl -X POST -d @data.json http://localhost:8080/vacation
+``` curl -X POST -d @data.json http://localhost:8080/vacation ```
 
 
 Weitere Informationen können mittels der folgenden Befehle eingesehen werden: 
@@ -37,7 +44,7 @@ camel:context-info vacation
 
 camel:route-list 
 
-camel:route-info  route4 
+camel:route-info  vacationRoute 
 
 activemq:bstat 
 activemq:dstat 
