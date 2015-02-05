@@ -3,9 +3,10 @@ Vacation Integration Sample as an OSGi Bundle
 
 ## ServiceMix Deployment
 
-1. Download des Sericemix 5.4.0 von http://servicemix.apache.org/ und das heruntergeladene Zip entpacken
+1. Download des <a href="http://example.com/">Sericemix</a> (getestet ab 5.4.0) und entpacken
 
 2. Klonen des Git Archivs mittels https://github.com/predic8/vacation-osgi oder Download des Repositories als Zip-Archiv
+  git cloen https://github.com/predic8/vacation-osgi
 
 3. Navigiere in das vacation-osgi Verzeichnis und führe mvn install aus.
 
