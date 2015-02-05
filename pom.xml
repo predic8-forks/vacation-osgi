@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-    <groupId>de.predic8.example</groupId>
+    <groupId>de.predic8</groupId>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>weathermapping</artifactId>
+    <artifactId>vacation-osgi</artifactId>
     <packaging>bundle</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    <name>WeatherMapping</name>
+    <name>Vacation ESB Sample OSGi</name>
 
     <properties>
         <cxf.version>2.7.11</cxf.version>
@@ -145,7 +145,7 @@
               <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
               <Bundle-Description>${project.description}</Bundle-Description>
               <Import-Package>*,org.apache.camel.osgi</Import-Package>
-              <Private-Package>org.apache.servicemix.examples.camel</Private-Package>
+              <Private-Package>de.predic8</Private-Package>
             </instructions>
           </configuration>
         </plugin>

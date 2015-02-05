@@ -6,8 +6,8 @@
     xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
 
 
-    <camelContext id="weathermap" xmlns="http://camel.apache.org/schema/blueprint" trace="false">
-        <package>de.predic8.example</package>
+    <camelContext id="vacation" xmlns="http://camel.apache.org/schema/blueprint" trace="false">
+        <package>de.predic8.vacation</package>
         <dataFormats>
             <xmljson id="xmljson"/>
         </dataFormats>

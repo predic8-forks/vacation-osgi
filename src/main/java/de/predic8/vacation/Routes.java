@@ -1,4 +1,4 @@
-package de.predic8.example;
+package de.predic8.vacation;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
@@ -10,7 +10,8 @@ public class Routes extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
-        from("jetty:http://localhost:8081/weathermap/")
+        from("jetty:http://localhost:8080/vacation/")
+        			.id("VacationRoute")
                 .tracing()
                 .unmarshal("xmljson")
                 .setHeader("city", xpath("//city/text()", String.class))
