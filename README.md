@@ -10,10 +10,10 @@ Vacation Integration Sample as an OSGi Bundle
   git clone https://github.com/predic8/vacation-osgi
   ```
 3. Nachladen der Dependencies mit Maven
-  ```mvn install```
+  ``` mvn install ```
 
 4. Nun kannst Du den Servicemix starten
-  ```./servicemix```
+  ``` ./servicemix ```
 
 5. Installieren der beiden Features Jetty und XML-Json
   ```
