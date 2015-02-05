@@ -19,8 +19,8 @@ Vacation Integration Sample as an OSGi Bundle
 6. Installation des Projekts im ServiceMix
   ```install mvn:de.predic8/vacation-osgi```
 
-7. ```list```
-  es sollte nun ```[ 151] [Installed  ] [            ] [       ] [   80] Vacation ESB Sample OSGi (1.0.0.SNAPSHOT) ```erscheinen
+7. ``` list ```
+  es sollte nun ``` [ 151] [Installed  ] [            ] [       ] [   80] Vacation ESB Sample OSGi (1.0.0.SNAPSHOT) ```erscheinen
   
 8. ``` camel:context-list ```
 
