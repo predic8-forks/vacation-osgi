@@ -26,9 +26,9 @@ Vacation Integration Sample as an OSGi Bundle
   
 8. ``` camel:context-list ``` zeigt nun
   ``` 
-   Context        Status         Uptime              
- -------        ------         ------              
- weathermap     Started        2 hours 26 minutes  
+ Context        Status         Uptime          
+ -------        ------         ------          
+ vacation       Started        17.500 seconds 
   ```
 
 ## Testen des Deployments
