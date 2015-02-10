@@ -11,7 +11,7 @@ public class Routes extends RouteBuilder {
     public void configure() throws Exception {
 
         from("jetty:http://localhost:8080/vacation/")
-        			.id("VacationRoute")
+        			.routeId("beach-or-ski")
                 .tracing()
                 .unmarshal("xmljson")
                 .setHeader("city", xpath("//city/text()", String.class))
@@ -38,13 +38,6 @@ public class Routes extends RouteBuilder {
                     .setBody().simple("{ \"message\" : \"You go skiing!\" }")
                     .endChoice()
                 .end();
-
-        /* Input JSON
-        {
-           "name": "Thomas",
-            "city": "Bonn"
-        }
-         */
 
     }
 
